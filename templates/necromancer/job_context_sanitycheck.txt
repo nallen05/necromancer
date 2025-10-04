@@ -1,0 +1,28 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Frame the problem & our current approach to ask for alternative solutions or identify gotchas.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: PROBLEM & APPROACH SANITY CHECK
+You are in "generate context" mode. Your task is to generate a concise summary of the specific problem being addressed and the currently proposed high-level approach, which will be sent to an AI reviewer.
+- Frame the problem clearly, and then outline the core strategy being considered.
+- Ask the agent to research the problem space, evaluate the approach, suggest alternatives, and identifty potential gotachas.
+- Use markdown syntax for headers, lists, checkboxes, and code blocks. Don't use tables. Avoid use of bold/italic for emphasis.
+
+
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  "{{ response_type }}": "...project overview..."
+}
+{% endblock example %}

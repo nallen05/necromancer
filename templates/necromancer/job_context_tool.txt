@@ -1,0 +1,27 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Extract specific needs to help in choosing a solution approach or tool.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: TOOL REQUIREMENTS DOCUMENTATION
+You are in "generate context" mode. Your task is to generate a concise summary of the project's specific requirements for solution approach or tool, which will be passed to an AI researcher agent.
+- Analyze the overall project, extracting the needs and constraints relevant to making this decision (eg: for choosing a database: data shape, query patterns, scale, etc).
+- Provide a clear decision-making framework. But also mmke sure to include enough holistic background context for the AI to use it's best judgement.
+- Make clear your default thinking & recommmendation. But assume your knowledge is slightly out of date. Ask the researcher to uncover the very latest state of the art, and encourage it to think beyond your provided defaults.
+- Use markdown syntax for headers, lists, checkboxes, and code blocks. Don't use tables. Avoid use of bold/italic for emphasis.
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  "{{ response_type }}": "...requirements specification..."
+}
+{% endblock example %}

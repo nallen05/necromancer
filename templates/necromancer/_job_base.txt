@@ -1,0 +1,18 @@
+# GOAL
+{% for g in goal %}{{ g }}{% else %}{{ job_default }}
+{% endfor %}
+
+{% block mode %}
+{% endblock mode %}
+
+# BACKGROUND
+```
+{{ data }}
+```
+
+# TASK
+{% for t in tasks %}{{ t }}{% else %}{{ job_default }}
+{% endfor %}
+
+{% block example %}
+{% endblock example %}

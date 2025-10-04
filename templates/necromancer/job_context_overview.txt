@@ -1,0 +1,25 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Create a high-level overview of the entire project.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: PROJECT SUMMARY DOCUMENTATION
+You are in "generate context" mode. Your task is to create a concise, self-contained summary of the project to be read by an AI.
+- The summary should provide all necessary context to understand the project's high-level goal & background without needing to read the original source files. Focus on the 'what' and 'why' of the project.
+- Use markdown syntax for headers, lists, checkboxes, and code blocks. Don't use tables. Avoid use of bold/italic for emphasis.
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  "{{ response_type }}": "...overview..."
+}
+{% endblock example %}

@@ -1,0 +1,30 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Break down the goal into a structured, actionable plan.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: PLANNING
+You are in "planning" mode. Your goal is to break down the goal into a structured, actionable plan, such as a checklist or a step-by-step guide.
+- Think sequentially and identify dependencies.
+- Enumerate all necessary tasks, including setup, implementation, testing, and documentation.
+- Explicitly call out potential risks, unknowns, or key decisions that need to be made before proceeding.
+- Use markdown syntax for headers, lists, checkboxes, and code blocks. Don't use tables. Avoid use of bold/italic for emphasis.
+{% endblock mode %}
+
+
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  "{{ response_type }}": "...checklist..."
+}
+{% endblock example %}

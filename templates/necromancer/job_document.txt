@@ -1,0 +1,29 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Create helpful documentation for other developers.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: DOCUMENTATION
+You are in "documentation" mode. Your goal is to create clear and helpful documentation for other developers.
+- Assume the reader can read the code but needs to understand its purpose, design rationale, and constraints. Explain the 'why,' not just the 'what.'
+- For code comments or docstrings, describe the function's behavior, its parameters, return values, and any potential exceptions or side effects.
+- The documentation should empower a future developer to use and maintain this code with confidence.
+{% endblock mode %}
+
+
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  {{ response_type }}: "...documentation..."
+}
+{% endblock example %}

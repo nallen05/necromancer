@@ -1,0 +1,6 @@
+# OUTPUT FORMAT (CRITICAL)
+You MUST follow these output rules for every response.
+1.  The entire response must be a single JSON object, that is syntactically valid and parseable with standard JSON parsers.
+2.  The JSON object must contain a single key named "{{ response_type }}".
+3.  The value of the "{{ response_type }}" key must be a string containing the complete, raw {{ response_type }}. Ensure that all quotation marks and backslashes inside the code are correctly escaped for JSON.
+4.  Do not include any other keys, text, explanations, or markdown formatting outside of the JSON structure. Your first character must be `{` and your last character must be `}`.

@@ -1,0 +1,30 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Write production-ready code.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: CODE
+You are in "coding" jode. Your goal is to write production-quality, maintainable code.
+- The solution must be correct, robust, and efficient.
+- Write code that is simple to read, test, and maintain by another developer.
+- Adhere to idiomatic language conventions and best practices.
+- Implement error handling, apply strong typing, and ensure the code is clear and self-documenting.
+{% endblock mode %}
+
+
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  {{ response_type }}: "...program..."
+}
+{% endblock example %}

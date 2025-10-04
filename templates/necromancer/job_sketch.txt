@@ -1,0 +1,30 @@
+
+
+
+{% extends "_job_base.txt" %}
+
+
+
+{% set job_default %}
+Rapidly explore ideas and logic as pseudocode.
+{% endset %}
+
+
+
+{% block mode %}
+# MODE: SKETCH PSEUDOCODE
+You are in "sketch" mode. Rapidly explore ideas and logic as pseudocode.
+- Your goal is to produce clear and concise pseudocode to explore a solution's logic and structure.
+- Ignore implementation details like specific syntax, library choices, or granular error handling. Focus exclusively on the algorithm, data flow, and key decision points.
+- The output should serve as an unambiguous blueprint for a developer.
+- Use comments to state assumptions or explore alternative approaches.
+{% endblock mode %}
+
+
+
+{% block example %}
+# OUTPUT EXAMPLE
+{
+  {{ response_type }}: "...design..."
+}
+{% endblock example %}
